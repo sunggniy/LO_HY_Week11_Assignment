@@ -1,0 +1,228 @@
+{
+  "topic": "PixPlot 視覺相似性 vs 文化概念分類：Red Velvet 專輯封面",
+  "labeling": "Human visual review by WorkBuddy on 24 album covers - NOT PixPlot output",
+  "three_schemes": {
+    "external": "NamuWiki / PopDaily / Apple Music 給定的 Red(9) / Velvet(6) / Mixed(9)",
+    "model": "PixPlot InceptionV3 + KMeans k=7，7 個 hotspots",
+    "human": "實際檢視封面後依可見色彩與構圖分 5 組"
+  },
+  "weighted_purity": "16/24 = 66.7%",
+  "human_groups": [
+    {
+      "label": "高飽和紅與鮮豔暖色",
+      "indices": [
+        2,
+        4,
+        9,
+        13,
+        19
+      ],
+      "files": [
+        "02_Happiness_2014_Red.jpg",
+        "04_The_Red_2015_Red.jpg",
+        "09_The_Red_Summer_2017_Red.jpg",
+        "13_The_Perfect_Red_Velvet_2018_Velvet.jpg",
+        "19_Birthday_2022_Mixed.jpg"
+      ],
+      "visual_evidence": "大面積紅/桃紅、對比強烈；#13 封面整片正紅。"
+    },
+    {
+      "label": "暗色低明度與成熟戲劇感",
+      "indices": [
+        1,
+        7,
+        11,
+        20,
+        22
+      ],
+      "files": [
+        "01_Be_Natural_2014_Velvet.jpg",
+        "07_Perfect_Velvet_2017_Velvet.jpg",
+        "11_RBB_2018_Velvet.jpg",
+        "20_Bloom_2022_Mixed.jpg",
+        "22_Chill_Kill_2023_Mixed.jpg"
+      ],
+      "visual_evidence": "黑/深褐/暗金、低飽和、構圖嚴肅；#1 為黑白。"
+    },
+    {
+      "label": "粉彩插畫與童趣夢幻",
+      "indices": [
+        3,
+        8,
+        15,
+        16,
+        17,
+        21,
+        23
+      ],
+      "files": [
+        "03_Ice_Cream_Cake_2015_Mixed.jpg",
+        "08_Rookie_2017_Red.jpg",
+        "15_The_ReVe_Festival_Day_1_2019_Red.jpg",
+        "16_The_ReVe_Festival_Day_2_2019_Red.jpg",
+        "17_The_ReVe_Festival_Finale_2019_Mixed.jpg",
+        "21_Feel_My_Rhythm_2022_Mixed.jpg",
+        "23_Cosmic_2024_Mixed.jpg"
+      ],
+      "visual_evidence": "手繪/樂園/花草/夢幻元素，人物非寫實主體。"
+    },
+    {
+      "label": "柔和人像與留白空氣感",
+      "indices": [
+        6,
+        10,
+        12,
+        14,
+        18,
+        24
+      ],
+      "files": [
+        "06_The_Velvet_2016_Velvet.jpg",
+        "10_Cookie_Jar_2018_Red.jpg",
+        "12_Summer_Magic_2018_Red.jpg",
+        "14_SAPPY_2019_Red.jpg",
+        "18_Queendom_2021_Mixed.jpg",
+        "24_Velvet_Summer_2026_Velvet.jpg"
+      ],
+      "visual_evidence": "人物為主體、光線柔和、留白多；#24 為明亮沙灘。"
+    },
+    {
+      "label": "文字主導極簡",
+      "indices": [
+        5
+      ],
+      "files": [
+        "05_Russian_Roulette_2016_Mixed.jpg"
+      ],
+      "visual_evidence": "幾乎只有字體與淺底色，無人物。"
+    }
+  ],
+  "model_clusters": [
+    {
+      "cluster": 1,
+      "size": 11,
+      "files": [
+        "01_Be_Natural_2014_Velvet.jpg",
+        "02_Happiness_2014_Red.jpg",
+        "03_Ice_Cream_Cake_2015_Mixed.jpg",
+        "04_The_Red_2015_Red.jpg",
+        "06_The_Velvet_2016_Velvet.jpg",
+        "08_Rookie_2017_Red.jpg",
+        "10_Cookie_Jar_2018_Red.jpg",
+        "12_Summer_Magic_2018_Red.jpg",
+        "14_SAPPY_2019_Red.jpg",
+        "20_Bloom_2022_Mixed.jpg",
+        "22_Chill_Kill_2023_Mixed.jpg"
+      ],
+      "external_label_counts": {
+        "Velvet": 2,
+        "Red": 6,
+        "Mixed": 3
+      }
+    },
+    {
+      "cluster": 2,
+      "size": 3,
+      "files": [
+        "07_Perfect_Velvet_2017_Velvet.jpg",
+        "18_Queendom_2021_Mixed.jpg",
+        "24_Velvet_Summer_2026_Velvet.jpg"
+      ],
+      "external_label_counts": {
+        "Velvet": 2,
+        "Mixed": 1
+      }
+    },
+    {
+      "cluster": 3,
+      "size": 3,
+      "files": [
+        "09_The_Red_Summer_2017_Red.jpg",
+        "17_The_ReVe_Festival_Finale_2019_Mixed.jpg",
+        "21_Feel_My_Rhythm_2022_Mixed.jpg"
+      ],
+      "external_label_counts": {
+        "Red": 1,
+        "Mixed": 2
+      }
+    },
+    {
+      "cluster": 4,
+      "size": 2,
+      "files": [
+        "05_Russian_Roulette_2016_Mixed.jpg",
+        "23_Cosmic_2024_Mixed.jpg"
+      ],
+      "external_label_counts": {
+        "Mixed": 2
+      }
+    },
+    {
+      "cluster": 5,
+      "size": 2,
+      "files": [
+        "13_The_Perfect_Red_Velvet_2018_Velvet.jpg",
+        "19_Birthday_2022_Mixed.jpg"
+      ],
+      "external_label_counts": {
+        "Velvet": 1,
+        "Mixed": 1
+      }
+    },
+    {
+      "cluster": 6,
+      "size": 2,
+      "files": [
+        "15_The_ReVe_Festival_Day_1_2019_Red.jpg",
+        "16_The_ReVe_Festival_Day_2_2019_Red.jpg"
+      ],
+      "external_label_counts": {
+        "Red": 2
+      }
+    },
+    {
+      "cluster": 7,
+      "size": 1,
+      "files": [
+        "11_RBB_2018_Velvet.jpg"
+      ],
+      "external_label_counts": {
+        "Velvet": 1
+      }
+    }
+  ],
+  "key_conflicts": [
+    {
+      "index": 13,
+      "file": "13_The_Perfect_Red_Velvet_2018_Velvet.jpg",
+      "external": "Velvet",
+      "human_group": "高飽和紅與鮮豔暖色",
+      "finding": "封面正紅，模型未將其與其他 Velvet 聚在一起，而與 Birthday(Mixed) 同群。"
+    },
+    {
+      "index": 24,
+      "file": "24_Velvet_Summer_2026_Velvet.jpg",
+      "external": "Velvet",
+      "human_group": "柔和人像與留白空氣感",
+      "finding": "標題含 Velvet 但封面明亮沙灘；模型與 Perfect Velvet(暗)、Queendom(粉彩) 同群。"
+    },
+    {
+      "index": 22,
+      "file": "22_Chill_Kill_2023_Mixed.jpg",
+      "external": "Mixed",
+      "human_group": "暗色低明度與成熟戲劇感",
+      "finding": "視覺明確偏 Velvet，但外部標記分歧，模型放在 Red 為主的 C1。"
+    },
+    {
+      "index": 5,
+      "file": "05_Russian_Roulette_2016_Mixed.jpg",
+      "external": "Mixed",
+      "human_group": "文字主導極簡",
+      "finding": "淡藍底純字體，與 Cosmic 被模型單獨聚成 C4。"
+    }
+  ],
+  "model_successes": [
+    "C6 把 ReVe Festival Day 1 與 Day 2 聚在一起（2 張、100% Red）。",
+    "C4 把 Russian Roulette 與 Cosmic 聚在一起（2 張、100% Mixed），兩者皆為字體主導的淺底封面。"
+  ]
+}

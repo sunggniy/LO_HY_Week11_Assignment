@@ -1,0 +1,54 @@
+{
+    "domain": {
+        "min": 2014,
+        "max": 2026
+    },
+    "dates": {
+        "2014": [
+            "01_Be_Natural_2014_Velvet.jpg",
+            "02_Happiness_2014_Red.jpg"
+        ],
+        "2015": [
+            "03_Ice_Cream_Cake_2015_Mixed.jpg",
+            "04_The_Red_2015_Red.jpg"
+        ],
+        "2016": [
+            "05_Russian_Roulette_2016_Mixed.jpg",
+            "06_The_Velvet_2016_Velvet.jpg"
+        ],
+        "2017": [
+            "07_Perfect_Velvet_2017_Velvet.jpg",
+            "08_Rookie_2017_Red.jpg",
+            "09_The_Red_Summer_2017_Red.jpg"
+        ],
+        "2018": [
+            "10_Cookie_Jar_2018_Red.jpg",
+            "11_RBB_2018_Velvet.jpg",
+            "12_Summer_Magic_2018_Red.jpg",
+            "13_The_Perfect_Red_Velvet_2018_Velvet.jpg"
+        ],
+        "2019": [
+            "14_SAPPY_2019_Red.jpg",
+            "15_The_ReVe_Festival_Day_1_2019_Red.jpg",
+            "16_The_ReVe_Festival_Day_2_2019_Red.jpg",
+            "17_The_ReVe_Festival_Finale_2019_Mixed.jpg"
+        ],
+        "2021": [
+            "18_Queendom_2021_Mixed.jpg"
+        ],
+        "2022": [
+            "19_Birthday_2022_Mixed.jpg",
+            "20_Bloom_2022_Mixed.jpg",
+            "21_Feel_My_Rhythm_2022_Mixed.jpg"
+        ],
+        "2023": [
+            "22_Chill_Kill_2023_Mixed.jpg"
+        ],
+        "2024": [
+            "23_Cosmic_2024_Mixed.jpg"
+        ],
+        "2026": [
+            "24_Velvet_Summer_2026_Velvet.jpg"
+        ]
+    }
+}

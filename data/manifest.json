@@ -1,0 +1,58 @@
+{
+    "version": "0.0.113",
+    "plot_id": "14512de4-e4ba-11f1-acfc-6ef114fe7d3b",
+    "output_directory": ".",
+    "layouts": {
+        "umap": {
+            "variants": [
+                {
+                    "n_neighbors": 15,
+                    "min_dist": 0.01,
+                    "layout": "data/layouts/umap-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json",
+                    "jittered": "data/layouts/umap-jittered-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json"
+                }
+            ]
+        },
+        "alphabetic": {
+            "layout": "data/layouts/grid-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json"
+        },
+        "grid": {
+            "layout": "data/layouts/rasterfairy-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json"
+        },
+        "categorical": {
+            "layout": "data/layouts/categorical-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json",
+            "labels": "data/layouts/categorical-labels-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json"
+        },
+        "date": {
+            "layout": "data/layouts/timeline-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json",
+            "labels": "data/layouts/timeline-labels-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json"
+        },
+        "geographic": null,
+        "custom": null
+    },
+    "initial_layout": "umap",
+    "point_sizes": {
+        "min": 0,
+        "grid": 0.2,
+        "max": 0.72,
+        "scatter": 0.12000000000000002,
+        "initial": 0.12000000000000002,
+        "categorical": 0.12,
+        "geographic": 0.005000000000000001,
+        "date": 0.022727272727272728
+    },
+    "imagelist": "data/imagelists/imagelist-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json",
+    "atlas_dir": "data/atlases/14512de4-e4ba-11f1-acfc-6ef114fe7d3b",
+    "metadata": true,
+    "default_hotspots": "data/hotspots/hotspot-14512de4-e4ba-11f1-acfc-6ef114fe7d3b.json",
+    "custom_hotspots": "data/hotspots/user_hotspots.json",
+    "gzipped": false,
+    "config": {
+        "sizes": {
+            "atlas": 2048,
+            "cell": 128,
+            "lod": 128
+        }
+    },
+    "creation_date": "20-November-2026-16:12:29"
+}

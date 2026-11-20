@@ -1,0 +1,75 @@
+[
+    {
+        "images": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            19,
+            21
+        ],
+        "img": "22_Chill_Kill_2023_Mixed.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 1"
+    },
+    {
+        "images": [
+            6,
+            17,
+            23
+        ],
+        "img": "24_Velvet_Summer_2026_Velvet.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 2"
+    },
+    {
+        "images": [
+            8,
+            16,
+            20
+        ],
+        "img": "21_Feel_My_Rhythm_2022_Mixed.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 3"
+    },
+    {
+        "images": [
+            4,
+            22
+        ],
+        "img": "23_Cosmic_2024_Mixed.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 4"
+    },
+    {
+        "images": [
+            12,
+            18
+        ],
+        "img": "19_Birthday_2022_Mixed.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 5"
+    },
+    {
+        "images": [
+            14,
+            15
+        ],
+        "img": "16_The_ReVe_Festival_Day_2_2019_Red.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 6"
+    },
+    {
+        "images": [
+            10
+        ],
+        "img": "11_RBB_2018_Velvet.jpg",
+        "layout": "inception_vectors",
+        "label": "Cluster 7"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "filter_name": "select",
+        "filter_values": [
+            "Velvet",
+            "Red",
+            "Mixed"
+        ]
+    }
+]
