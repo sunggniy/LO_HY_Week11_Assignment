@@ -1937,7 +1937,7 @@ input[type=text] {
 
 /* 窄预览面板：把两栏筛选器固定在 header 下方，避免被绝对定位的
    header-controls-top 挤出可视范围（原本在 760px 宽时 x = -338）。 */
-@media (max-width: 1100px) {
+@media (max-width: 1600px) {
   #filters-desktop {
     position: fixed;
     top: 52px;
@@ -1953,6 +1953,10 @@ input[type=text] {
   #filters-desktop .filter {
     display: inline-block;
     margin: 0 6px;
+  }
+
+  #filters-desktop .filter-label {
+    white-space: nowrap;
   }
 
   #filters-mobile-wrap {
