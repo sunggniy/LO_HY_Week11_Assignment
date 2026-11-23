@@ -1929,3 +1929,33 @@ input[type=text] {
   }
 
 }
+
+/* 保证筛选器在载入期间也可见（原 PixPlot 在 loader 阶段把 header 设为 opacity:0） */
+#header-controls {
+  opacity: 1 !important;
+}
+
+/* 窄预览面板：把两栏筛选器固定在 header 下方，避免被绝对定位的
+   header-controls-top 挤出可视范围（原本在 760px 宽时 x = -338）。 */
+@media (max-width: 1100px) {
+  #filters-desktop {
+    position: fixed;
+    top: 52px;
+    left: 8px;
+    z-index: 30;
+    display: inline-block;
+    background: #333333;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  #filters-desktop .filter {
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+  #filters-mobile-wrap {
+    display: none;
+  }
+}

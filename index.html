@@ -3,7 +3,7 @@
   <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' href='assets/css/no-ui-slider.css'>
-    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+    <link rel='stylesheet' type='text/css' href='assets/css/style.css?v=5'>
     <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
     <meta http-equiv='ScreenOrientation' content='autoRotate:disabled'>
     <title>PixPlot | Visualizing Image Fields</title>
@@ -635,7 +635,7 @@
     <script src='assets/vendor/dist/no-ui-slider.min.js'></script>
     <script src='assets/vendor/dist/jszip.min.js'></script>
     <script src='assets/vendor/dist/d3.min.js'></script>
-    <script src='assets/js/tsne.js'></script>
+    <script src='assets/js/tsne.js?v=5'></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -644,5 +644,28 @@
       ga('create', 'UA-101732875-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <!-- Category source note (course assignment) -->
+    <div id="category-source-note" style="position:fixed;left:16px;bottom:16px;z-index:9999;max-width:330px;background:rgba(26,26,26,0.94);border:1px solid #555;border-radius:8px;padding:12px 14px;color:#e8e8e8;font-family:'Open Sans',sans-serif;font-size:12px;line-height:1.55;box-shadow:0 2px 10px rgba(0,0,0,0.4);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+        <strong style="font-size:13px;color:#f0c674;">分类标签来源 / Label source</strong>
+        <button onclick="document.getElementById('category-source-note').style.display='none';" style="background:none;border:none;color:#aaa;font-size:16px;line-height:1;cursor:pointer;padding:0 2px;" aria-label="Close">&times;</button>
+      </div>
+      <div>筛选器中的 <strong>Red / Velvet / Mixed</strong> 为<strong>官方／粉丝公认的概念分类</strong>，由研究者从以下公开来源整理后写入 metadata，<strong>并非 PixPlot 自动生成</strong>：</div>
+      <ul style="margin:6px 0 0;padding-left:18px;">
+        <li>NamuWiki — Past Album Concepts</li>
+        <li>PopDaily — Chill Kill 专题</li>
+        <li>Apple Music — 发行资料</li>
+      </ul>
+      <div style="margin-top:8px;padding-top:8px;border-top:1px solid #444;">
+        <strong style="font-size:12px;color:#9fd8c0;">第二个筛选器 · 纯视觉色彩（无 Mixed）</strong>
+        <div style="margin-top:4px;">按封面实际色彩／构图人工归类，只分两类，不含 Mixed：</div>
+        <ul style="margin:4px 0 0;padding-left:18px;">
+          <li><strong>VisualRed</strong> 13 张 — 高饱和、鲜艳、夏日期盼感</li>
+          <li><strong>VisualVelvet</strong> 11 张 — 暗色、柔和、古典、粉彩梦幻</li>
+        </ul>
+        <div style="margin-top:4px;color:#b3b3b3;">原 Mixed 4 张已二选一：Ice Cream Cake、Queendom → Velvet；ReVe Finale、Velvet Summer → Red。仅 Velvet Summer 与官方栏不同。</div>
+      </div>
+      <div style="margin-top:8px;color:#b3b3b3;">PixPlot 的 7 个 hotspots 才是模型按视觉相似度自动分出的群，与上面两个人工筛选维度都不同。</div>
+    </div>
   </body>
 </html>

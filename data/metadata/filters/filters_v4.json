@@ -1,0 +1,17 @@
+[
+    {
+        "filter_name": "Official concept",
+        "filter_values": [
+            "Velvet",
+            "Red",
+            "Mixed"
+        ]
+    },
+    {
+        "filter_name": "Visual color (no Mixed)",
+        "filter_values": [
+            "VisualRed",
+            "VisualVelvet"
+        ]
+    }
+]

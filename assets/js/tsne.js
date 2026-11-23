@@ -2947,7 +2947,7 @@ function Filters() {
 
 Filters.prototype.loadFilters = function() {
   document.querySelector('#filters-mobile-container').style.display = 'block';
-  var url = config.data.dir + '/metadata/filters/filters.json';
+  var url = config.data.dir + '/metadata/filters/filters_v4.json';
   get(getPath(url), function(data) {
     for (var i=0; i<data.length; i++) {
       this.filters.push(new Filter(data[i]));
@@ -2982,10 +2982,13 @@ function Filter(obj) {
   this.desktopSelect.addEventListener('mouseleave', this.hide.bind(this));
   // create the desktop filter's select
   this.desktopSelect.className = 'filter';
-  var label = document.createElement('div');
-  label.className = 'settings-label filter-label';
-  label.textContent = 'Category';
-  this.desktopSelect.appendChild(label);
+    var label = document.createElement('div');
+    label.className = 'settings-label filter-label';
+    label.textContent = this.name || 'Category';
+    if (this.name && this.name.indexOf('Visual') === 0) {
+      label.style.color = '#9fd8c0';
+    }
+    this.desktopSelect.appendChild(label);
   // create the mobile filter's select
   this.mobileSelect = document.createElement('select');
   // format all filter options
